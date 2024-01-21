@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pages xmlns="http://chameleon.ibs-qa.ru/schema/web-elements">
+    <Page name="Главная страница">
+        <Button name="Песочница" locator="//*[@class='nav-item dropdown']" isLoaded="true"/>
+        <Button name="Товары" locator="//a[@href='/food']" isLoaded="true"/>
+        <Button name="Qa" locator="//a[@class='navbar-brand']" isLoaded="true"/>
+    </Page>
+    <Page name="Список товаров">
+        <Button name="Добавить" locator="//button[@data-toggle='modal']" isLoaded="true"/>
+    </Page>
+    <Page name="Добавление товара">
+        <TextInput name="Имя" locator="//input[@id='name']"/>
+        <Button name="Тип" locator="//select[@id='type']"/>
+        <Button name="Фрукт" locator="//*[@value='FRUIT']"/>
+        <CheckBox name="Чек" locator="//input[@type='checkbox']"/>
+        <CheckBox name="Сохранить" locator="//button[@id='save']"/>
+    </Page>
+</Pages>
